@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: $footerH;
+  border-top: 1px solid #f1f4f6;
+  background-color: $white;
+  @extend %footer-shadow;
+  h1 {
+    line-height: $footerH;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
