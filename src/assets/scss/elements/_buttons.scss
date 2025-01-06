@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  overflow: hidden;
+  &.primary {
+    color: $white;
+    border-color: $primary;
+    background-color: $primary;
+    &:hover {
+      border-color: darken($primary, 10);
+      background-color: darken($primary, 5);
+    }
+  }
+}

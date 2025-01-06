@@ -1,0 +1,559 @@
+@charset "utf-8";
+
+.card-shadow-primary {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(84,92,216,.03),
+    0 .9375rem 1.40625rem rgba(84,92,216,.03),
+    0 .25rem .53125rem rgba(84,92,216,.05),
+    0 .125rem .1875rem rgba(84,92,216,.03)
+  )
+}
+.card-shadow-secondary {
+  @include box-shadow(
+    0 .46875rem 2.1875rem hsla(208,7%,46%,.03),
+    0 .9375rem 1.40625rem hsla(208,7%,46%,.03),
+    0 .25rem .53125rem hsla(208,7%,46%,.05),
+    0 .125rem .1875rem hsla(208,7%,46%,.03)
+  )
+}
+.card-shadow-success {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(58,196,125,.03),
+    0 .9375rem 1.40625rem rgba(58,196,125,.03),
+    0 .25rem .53125rem rgba(58,196,125,.05),
+    0 .125rem .1875rem rgba(58,196,125,.03)
+  )
+}
+.card-shadow-info {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(48,177,255,.03),
+    0 .9375rem 1.40625rem rgba(48,177,255,.03),
+    0 .25rem .53125rem rgba(48,177,255,.05),
+    0 .125rem .1875rem rgba(48,177,255,.03)
+  )
+}
+.card-shadow-warning {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(247,185,36,.03),
+    0 .9375rem 1.40625rem rgba(247,185,36,.03),
+    0 .25rem .53125rem rgba(247,185,36,.05),
+    0 .125rem .1875rem rgba(247,185,36,.03)
+  )
+}
+.card-shadow-danger {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(217,37,80,.03),
+    0 .9375rem 1.40625rem rgba(217,37,80,.03),
+    0 .25rem .53125rem rgba(217,37,80,.05),
+    0 .125rem .1875rem rgba(217,37,80,.03)
+  )
+}
+.card-shadow-light {
+  @include box-shadow(
+    0 .46875rem 2.1875rem hsla(0,0%,93%,.03),
+    0 .9375rem 1.40625rem hsla(0,0%,93%,.03),
+    0 .25rem .53125rem hsla(0,0%,93%,.05),
+    0 .125rem .1875rem hsla(0,0%,93%,.03)
+  )
+}
+.card-shadow-dark {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(52,58,64,.03),
+    0 .9375rem 1.40625rem rgba(52,58,64,.03),
+    0 .25rem .53125rem rgba(52,58,64,.05),
+    0 .125rem .1875rem rgba(52,58,64,.03)
+  )
+}
+.card-shadow-focus {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(68,64,84,.03),
+    0 .9375rem 1.40625rem rgba(68,64,84,.03),
+    0 .25rem .53125rem rgba(68,64,84,.05),
+    0 .125rem .1875rem rgba(68,64,84,.03)
+  )
+}
+.card-shadow-alternate {
+  @include box-shadow(
+    0 .46875rem 2.1875rem rgba(131,88,138,.03),
+    0 .9375rem 1.40625rem rgba(131,88,138,.03),
+    0 .25rem .53125rem rgba(131,88,138,.05),
+    0 .125rem .1875rem rgba(131,88,138,.03)
+  )
+}
+
+.box-shadow {
+  &.ex {
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: $white;
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      line-height: 26px;
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+    }
+    &.n4 {
+      &::after {
+        content: 'by 3drops';
+      }
+    }
+    &.n9,
+    &.n11,
+    &.n12 {
+      &::after {
+        content: 'by Sketch';
+      }
+    }
+    &.n14,
+    &.n15,
+    &.n16,
+    &.n17,
+    &.n18,
+    &.n19,
+    &.n20,
+    &.n21 {
+      &::after {
+        content: 'by Stripe';
+      }
+    }
+    &.n27,
+    &.n28,
+    &.n29,
+    &.n30,
+    &.n31,
+    &.n32,
+    &.n33 {
+      &::after {
+        content: 'by Material';
+      }
+    }
+    &.n34,
+    &.n35,
+    &.n36,
+    &.n37,
+    &.n38,
+    &.n39,
+    &.n40,
+    &.n41 {
+      &::after {
+        content: 'by Tailwind CSS';
+      }
+    }
+    &.n43,
+    &.n44 {
+      &::after {
+        content: 'by Tobias Ahlin';
+      }
+    }
+    &.n45 {
+      &::after {
+        content: 'by feedback.fish';
+      }
+    }
+    &.n48,
+    &.n49,
+    &.n50 {
+      &::after {
+        content: 'by Alligator';
+      }
+    }
+    &.n52 {
+      &::after {
+        content: 'by pqina.nl/doka';
+      }
+    }
+    &.n54,
+    &.n55 {
+      &::after {
+        content: 'by Github';
+      }
+    }
+    &.n57 {
+      &::after {
+        content: 'by Facebook';
+      }
+    }
+    &.n58,
+    &.n59 {
+      &::after {
+        content: 'by Shopify';
+      }
+    }
+    &.n60,
+    &.n61 {
+      &::after {
+        content: 'by Fossheim';
+      }
+    }
+    &.n62,
+    &.n63 {
+      &::after {
+        content: 'by boxshadows.com';
+      }
+    }
+    &.n64,
+    &.n65,
+    &.n66,
+    &.n67,
+    &.n68,
+    &.n69,
+    &.n70,
+    &.n71 {
+      &::after {
+        content: 'by box-shadows.co';
+      }
+    }
+    &.n72 {
+      &::after {
+        content: 'by 10er.app';
+      }
+    }
+    &.n73 {
+      &::after {
+        content: 'by wip.chat';
+      }
+    }
+    &.n75,
+    &.n76,
+    &.n77,
+    &.n78 {
+      &::after {
+        content: 'by Airbnb';
+      }
+    }
+    &.n79,
+    &.n80 {
+      &::after {
+        content: 'by ls.graphics';
+      }
+    }
+    &.n81 {
+      &::after {
+        content: 'by Lonely Planet';
+      }
+    }
+    &.n82,
+    &.n83,
+    &.n84 {
+      &::after {
+        content: 'by Mac';
+      }
+    }
+    &.n85 {
+      &::after {
+        content: 'by pqina.nl/doka';
+      }
+    }
+    &.n86 {
+      &::after {
+        content: 'by Typedream';
+      }
+    }
+    &.n92,
+    &.n93 {
+      &::after {
+        content: 'by Trello';
+      }
+    }
+    &.n94,
+    &.n95 {
+      &::after {
+        content: 'by Antimetal';
+      }
+    }
+  }
+  &.n0 {
+    @include box-shadow(rgba(149, 157, 165, 0.2) 0px 8px 24px);
+  }
+  &.n1 {
+    @include box-shadow(rgba(100, 100, 111, 0.2) 0px 7px 29px 0px);
+  }
+  &.n2 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px);
+  }
+  &.n3 {
+    @include box-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+  }
+  &.n4 {
+    @include box-shadow(rgba(0, 0, 0, 0.16) 0px 1px 4px);
+  }
+  &.n5 {
+    @include box-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+  }
+  &.n6 {
+    @include box-shadow(rgba(99, 99, 99, 0.2) 0px 2px 8px 0px);
+  }
+  &.n7 {
+    @include box-shadow(rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px);
+  }
+  &.n8 {
+    @include box-shadow(rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px);
+  }
+  &.n9 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);
+  }
+  &.n10 {
+    @include box-shadow(rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px);
+  }
+  &.n11 {
+    @include box-shadow(rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px);
+  }
+  &.n12 {
+    @include box-shadow(rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px);
+  }
+  &.n13 {
+    @include box-shadow(rgba(17, 12, 46, 0.15) 0px 48px 100px 0px);
+  }
+  &.n14 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset);
+  }
+  &.n15 {
+    @include box-shadow(rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px);
+  }
+  &.n16 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px);
+  }
+  &.n17 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px);
+  }
+  &.n18 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px);
+  }
+  &.n19 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px);
+  }
+  &.n20 {
+    @include box-shadow(rgb(38, 57, 77) 0px 20px 30px -10px);
+  }
+  &.n21 {
+    @include box-shadow(rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset);
+  }
+  &.n22 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px);
+  }
+  &.n23 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px);
+  }
+  &.n24 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px);
+  }
+  &.n25 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset);
+  }
+  &.n26 {
+    @include box-shadow(rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px);
+  }
+  &.n27 {
+    @include box-shadow(rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px);
+  }
+  &.n28 {
+    @include box-shadow(rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px);
+  }
+  &.n29 {
+    @include box-shadow(rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px);
+  }
+  &.n30 {
+    @include box-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px);
+  }
+  &.n31 {
+    @include box-shadow(rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px);
+  }
+  &.n32 {
+    @include box-shadow(rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px);
+  }
+  &.n33 {
+    @include box-shadow(rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px);
+  }
+  &.n34 {
+    @include box-shadow(rgba(0, 0, 0, 0.05) 0px 0px 0px 1px);
+  }
+  &.n35 {
+    @include box-shadow(rgba(0, 0, 0, 0.05) 0px 1px 2px 0px);
+  }
+  &.n36 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px);
+  }
+  &.n37 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px);
+  }
+  &.n38 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px);
+  }
+  &.n39 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px);
+  }
+  &.n40 {
+    @include box-shadow(rgba(0, 0, 0, 0.25) 0px 25px 50px -12px);
+  }
+  &.n41 {
+    @include box-shadow(rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset);
+  }
+  &.n42 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px);
+  }
+  &.n43 {
+    @include box-shadow(rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px);
+  }
+  &.n44 {
+    @include box-shadow(rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px);
+  }
+  &.n45 {
+    @include box-shadow(rgba(0, 0, 0, 0.2) 0px 18px 50px -10px); 
+  }
+  &.n46 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 10px 50px);
+  }
+  &.n47 {
+    @include box-shadow(rgba(0, 0, 0, 0.04) 0px 3px 5px);
+  }
+  &.n48 {
+    @include box-shadow(rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px);
+  }
+  &.n49 {
+    @include box-shadow(rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px);
+  }
+  &.n50 {
+    @include box-shadow(rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px);
+  }
+  &.n51 {
+    @include box-shadow(rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px);
+  }
+  &.n52 {
+    @include box-shadow(rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em);
+  }
+  &.n53 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px 0px);
+  }
+  &.n54 {
+    @include box-shadow(rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset);
+  }
+  &.n55 {
+    @include box-shadow(rgba(3, 102, 214, 0.3) 0px 0px 0px 3px);
+  }
+  &.n56 {
+    @include box-shadow(rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px);
+  }
+  &.n57 {
+    @include box-shadow(rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset);
+  }
+  &.n58 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 0px 5px 15px 0px);
+  }
+  &.n59 {
+    @include box-shadow(rgba(33, 35, 38, 0.1) 0px 10px 10px -10px);
+  }
+  &.n60 {
+    @include box-shadow(blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px);
+  }
+  &.n61 {
+    @include box-shadow(rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px);
+  }
+  &.n62 {
+    @include box-shadow(rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset);
+  }
+  &.n63 {
+    @include box-shadow(rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px);
+  }
+  &.n64 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 1px 0px);
+  }
+  &.n65 {
+    @include box-shadow(rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px);
+  }
+  &.n66 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 0px 16px);
+  }
+  &.n67 {
+    @include box-shadow(rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px);
+  }
+  &.n68 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px);
+  }
+  &.n69 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px);
+  }
+  &.n70 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px);
+  }
+  &.n71 {
+    @include box-shadow(rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px);
+  }
+  &.n72 {
+    @include box-shadow(rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px);
+  }
+  &.n73 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px);
+  }
+  &.n74 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px);
+  }
+  &.n75 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 0px 3px 3px 0px);
+  }
+  &.n76 {
+    @include box-shadow(rgba(0, 0, 0, 0.08) 0px 4px 12px); 
+  }
+  &.n77 {
+    @include box-shadow(rgba(0, 0, 0, 0.15) 0px 2px 8px);
+  }
+  &.n78 {
+    @include box-shadow(rgba(0, 0, 0, 0.18) 0px 2px 4px);
+  }
+  &.n79 {
+    @include box-shadow(rgba(0, 0, 0, 0.1) -4px 9px 25px -6px);
+  }
+  &.n80 {
+    @include box-shadow(rgba(0, 0, 0, 0.2) 0px 60px 40px -7px);
+  }
+  &.n81 {
+    @include box-shadow(rgba(0, 0, 0, 0.4) 0px 30px 90px);
+  }
+  &.n82 {
+    @include box-shadow(rgba(0, 0, 0, 0.56) 0px 22px 70px 4px);
+  }
+  &.n83 {
+    @include box-shadow(rgba(0, 0, 0, 0.2) 0px 20px 30px);
+  }
+  &.n84 {
+    @include box-shadow(rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px);
+  }
+  &.n85 {
+    @include box-shadow(rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset);
+  }
+  &.n86 {
+    @include box-shadow(rgba(0, 0, 0, 0.09) 0px 3px 12px);
+  }
+  &.n87 {
+    @include box-shadow(rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px);
+  }
+  &.n88 {
+    @include box-shadow(rgba(0, 0, 0, 0.45) 0px 25px 20px -20px);
+  }
+  &.n89 {
+    @include box-shadow(rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset);
+  }
+  &.n90 {
+    @include box-shadow(rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset);
+  }
+  &.n91 {
+    @include box-shadow(rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset);
+  }
+  &.n92 {
+    @include box-shadow(rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(41, 49, 65, 0.13) 0px 0px 1px 1px);
+  }
+  &.n93 {
+    @include box-shadow(rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px);
+  }
+  &.n94 {
+    @include box-shadow(rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px);
+  }
+  &.n95 {
+    @include box-shadow(rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px);
+  }
+}
