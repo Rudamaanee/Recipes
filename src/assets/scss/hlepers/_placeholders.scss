@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+// 사용법 @extend %header-shadow;
+%header-shadow {
+  @include box-shadow(
+    0 0.46875rem 2.1875rem rgba(8,10,37,.03),
+    0 0.9375rem 1.40625rem rgba(8,10,37,.03),
+    0 0.25rem 0.53125rem rgba(8,10,37,.05),
+    0 0.125rem 0.1875rem rgba(8,10,37,.03)
+  );
+}
+%footer-shadow {
+  @include box-shadow(
+    0.3rem -0.46875rem 2.1875rem rgba(8,10,37,.02),
+    0.3rem -0.9375rem 1.40625rem rgba(8,10,37,.02),
+    0.3rem -0.25rem 0.53125rem rgba(8,10,37,.04),
+    0.3rem -0.125rem 0.1875rem rgba(8,10,37,.02)
+  );
+}
+%card-shadow {
+  @include box-shadow(
+    0 0.46875rem 2.1875rem rgba(8,10,37,.03),
+    0 0.9375rem 1.40625rem rgba(8,10,37,.03),
+    0 0.25rem 0.53125rem rgba(8,10,37,.05),
+    0 0.125rem 0.1875rem rgba(8,10,37,.03)
+  );
+}
+
+%lnbScrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background-color: rgba($black, .1);
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+%scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: rgba($black, .05);
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background-color: rgba($black, .1);
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}

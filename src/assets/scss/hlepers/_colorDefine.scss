@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// /* ########## 공통 컬러 ########## */
+
+$red:    #ff0000; // 오류(에러), 실행불가
+$orange: #ffa500; // 경계, 위험
+$yellow: #f2f247; // 주의, 경고, 조심
+$green:  #4caf50; // 실행됨, 가능, 확인
+$blue:   #0000ff; // 정보
+$purple: #800080; // Royalty(왕족), Luxury(호화로움), Spirityality(영성), Ambition(야망)
+$pink:   #ff1493; // Compassion(동정심), Sincerity(성실), Sophistication(세련), Sweet(달콤함)
+$brown:  #8b4513; // Dependable(믿을 수 있는), Rugged(단호환), Trustworthy(신회할 수 있는), Simple(간단한)
+$black:  black;   // Formaility(형식/격식), Dramatic(극적인), Sophistication(세련), Security(보안)
+$white:  white;   // Clean(깨끗한), Simplicity(간단함), Innocence(결백), Honest(정직한)
+
+$deeppurple: #452350;
+$amber:      #f4951d;
+$deeporange: #e26e0e;
+$bluegray:   #616974;
+
+// ########## bootColor ##########
+$primary:   #0d6efd;
+$secondary: #6c757d;
+$success:   #99cd32;
+$info:      #63b4f6;
+$warning:   #ffaa33;
+$danger:    #ff4433;
+$light:     #f8f9fa;
+$dark:      #212529;
+
+// Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #a1aab2 !default;
+$gray-600: #6c757d !default;
+$gray-700: #4F5467 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+$whiteSmoke: #f5f5f5;
+
+$light: #f1f1f1;
+
+:root {
+  
+}

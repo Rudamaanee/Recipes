@@ -1,1 +1,7 @@
+@charset "utf-8";
+
+@import "variables";        // 변수
+@import "colorDefine";      // 색상 정의
+@import "mixins";           // 재사용 스타일 정의
+@import "placeholders";     // 연관성있는 선택자
 

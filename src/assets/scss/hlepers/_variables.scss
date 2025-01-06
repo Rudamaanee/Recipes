@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// /* 중단점 (Breakpoint) */
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$minWidth: 1000px;
+$maxWidth: 1730px;
+
+// radius
+$radiusSm: var(--bs-border-radius-sm);
+$radiusLg: var(--bs-border-radius-lg);
+
+// /* 레이아웃 */   // columns - 컨텐츠 영역 | gutters - 컬럼 사이 공간 | margins - 화면 가장자리 사이 공간
+$headerH: 50px;
+$footerH: 30px;
+$lnbW: 280px;
+$lnbWS: 80px;
+
+$gapS: 16px;
+$gapM: 24px;
+
